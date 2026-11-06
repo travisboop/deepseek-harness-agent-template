@@ -1,0 +1,7 @@
+- insert:
+    - id: template-test-fixture
+      name: "@yiwu-template/test-fixture"
+- id: agent-default-model
+  config:
+    provider: template-test
+    model: fixture

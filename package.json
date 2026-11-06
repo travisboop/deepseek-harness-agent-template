@@ -1,0 +1,31 @@
+{
+  "name": "deepseek-harness-agent-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Yiwu specialist agent starter on DeepSeek Harness 0.2.1-rc.2",
+  "workspaces": ["packages/*"],
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "node scripts/dsh.mjs web",
+    "dsh": "node scripts/dsh.mjs",
+    "config": "node scripts/dsh.mjs web --dump-config",
+    "test": "npm run test --workspaces --if-present && node --test test/*.test.mjs",
+    "test:agent": "npm run test --workspaces --if-present",
+    "test:integration": "node --test test/*.test.mjs",
+    "check:docs": "node scripts/check-docs.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.2",
+    "js-yaml": "4.3.2",
+    "@deepseek-ai/cordis-plugin-include": "1.0.10"
+  },
+  "devDependencies": { "pnpm": "11.26.0" },
+  "overrides": {
+    "fflate": "0.8.3",
+    "undici": "8.12.2",
+    "zod": "4.6.7",
+    "@deepseek-ai/dsh-mcp-client": { "@modelcontextprotocol/client": "2.3.0" }
+  }
+}

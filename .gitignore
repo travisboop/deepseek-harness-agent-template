@@ -1,0 +1,16 @@
+node_modules/
+.dsh/
+.dsh.backup*/
+.agents/
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.tgz
+.backups/
+.test-artifacts/
+coverage/
+.DS_Store
