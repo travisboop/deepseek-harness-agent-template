@@ -6,7 +6,7 @@
 
 ## 创建自己的私有仓库
 
-取得此模板的读取权限后，点击 **Use this template → Create a new repository**，选择自己的账号和 **Private**。随后 Clone 自己的仓库。
+此仓库是公开模板，无需邀请即可使用。登录 GitHub 后，点击 **Use this template → Create a new repository**，选择自己的账号和 **Private**，随后 Clone 自己的仓库。
 
 生成的仓库有独立的提交历史和访问权限。模板后续更新需要主动迁入；向主 Harness 交付专业包时，按 [INTEGRATION.md](docs/INTEGRATION.md)操作。
 
